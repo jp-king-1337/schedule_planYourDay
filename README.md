@@ -39,6 +39,8 @@ Starter code was provided for refactoring as part of the Rutgers Full Stack Flex
 
 ChatGPT was consulted. While nothing was directly copied from ChatGPT, I still want to credit the LLM for its assistance solving problems and occasionally acting as a second set of eyes to find a typo in a snippet of code. Also for helping me spell occasionally just now.
 
+I will also credit coolors.co for building a palette off of #301394 for me.
+
 
 ## License
 
