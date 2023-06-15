@@ -15,6 +15,11 @@ $(function () {
   $(document).ready(function() {
     var currentHour = dayjs().hour();
     console.log(currentHour);
+    // current hour is 21 right now
+
+    $(".time-block").each(function () {
+      
+    })
   });
   
 
