@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-color: #DABFFF;
 }
 
 textarea {
@@ -8,7 +9,7 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid #301934;
   padding: 10px;
 }
 
@@ -21,13 +22,13 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid #DABFFF;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #7FDEFF;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed #301934;
 }
 
 .past {
@@ -36,12 +37,12 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #907AD6;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #BAF2BB;
   color: white;
 }
 
