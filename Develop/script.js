@@ -15,11 +15,26 @@ $(function () {
   $(document).ready(function () {
     var currentHour = dayjs().hour();
     console.log(currentHour);
-    // current hour is 21 right now
+    // current hour is 22 right now
 
     $(".time-block").each(function () {
       // Get hour of time block
-      var hour = ?
+      var hour = parseInt($(this).attr("id").split("-")[1])
+      // parseInt makes string into integer, string is formed from this (the time block) while selecting the id attribute and splitting it at the - and choosing the second part of the resulting string, the [1] which is actually "9" which is converted to 9 by parseInt
+
+
+      // time block has id
+      // id has number in it
+      // div with hour also has number in it
+      // pull hour from one of those
+
+      // $(this) is current element - here it is current time block
+      // $(this) = $(document.body.children[1].children[0]
+
+      // $(this).attr("id") grabs id
+      // (split("-")[1])
+
+
       // compare to current hour
       if (hour < currentHour) {
         $(this).removeClass("present future").addClass("past");
