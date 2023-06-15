@@ -20,20 +20,6 @@ $(function () {
     $(".time-block").each(function () {
       // Get hour of time block
       var hour = parseInt($(this).attr("id").split("-")[1])
-      // parseInt makes string into integer, string is formed from this (the time block) while selecting the id attribute and splitting it at the - and choosing the second part of the resulting string, the [1] which is actually "9" which is converted to 9 by parseInt
-
-
-      // time block has id
-      // id has number in it
-      // div with hour also has number in it
-      // pull hour from one of those
-
-      // $(this) is current element - here it is current time block
-      // $(this) = $(document.body.children[1].children[0]
-
-      // $(this).attr("id") grabs id
-      // (split("-")[1])
-
 
       // compare to current hour
       if (hour < currentHour) {
@@ -49,7 +35,9 @@ $(function () {
 
   // TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements.
   // HINT: How can the id attribute of each time-block be used to do this?
+  $(document).ready(function() {
 
+  });
 
   // TODO: Add code to display the current date in the header of the page.
 });
