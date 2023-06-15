@@ -1,4 +1,9 @@
 $(function () {
+  function displayCurrentDate() {
+    var currentDate = dayjs().format("YYYY-MM-DD HH:mm:ss");
+    $("#currentDay").text("Current Date and Time: " +currentDate);
+  }
+  
   $(".saveBtn").on("click", function btnClick() {
     var userInput = $(this).siblings(".description").val();
 
@@ -32,13 +37,7 @@ $(function () {
     });
   });
 
-  function displayCurrentDate() {
-    var currentDate = dayjs().format("YYYY-MM-DD HH:mm:ss");
-    $("#currentDay").text("Current Date and Time: " +currentDate);
-  }
-
   displayCurrentDate();
-
   // Updates the time display every second.
   setInterval(displayCurrentDate, 1000);
 });
