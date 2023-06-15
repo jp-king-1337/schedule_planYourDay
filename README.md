@@ -27,7 +27,10 @@ This project is to be graded as part of my participation in the Rutgers Coding B
 [Deployed Link](https://jp-king-1337.github.io/schedule_planYourDay/)
 
 
-![description](link)
+![top half of page](https://github.com/jp-king-1337/schedule_planYourDay/blob/main/Assets/screenshots/screenshot1.png?raw=true)
+![bottom half of page](https://github.com/jp-king-1337/schedule_planYourDay/blob/main/Assets/screenshots/screenshot2.png?raw=true)
+![test09 and test10 saved to hours 09:00 and 10:00 respectively, with test11 and test12 in textarea of the time blocks for 11:00 and 12:00, respecctively, but not saved to localStorage](https://github.com/jp-king-1337/schedule_planYourDay/blob/main/Assets/screenshots/screenshot3.png?raw=true)
+![after refresh test09 and test10 still show in the time blocks of 09:00 and 10:00 respectively, while test11 and test12 have been removed by the refresh because they were not saved to localStorage](https://github.com/jp-king-1337/schedule_planYourDay/blob/main/Assets/screenshots/screenshot4.png?raw=true)
 
 
 ## Credits
