@@ -1,7 +1,12 @@
 $(function () {
   function displayCurrentDate() {
     var currentDate = dayjs().format("YYYY-MM-DD HH:mm:ss");
-    $("#currentDay").text("Current Date and Time: " + currentDate);
+    $("#currentDate").text("Current Date and Time: " + currentDate);
+  }
+
+  function displayCurrentDay() {
+    var currentDay = dayjs().format("dddd");
+    $("#currentDay").text("Current Day: " + currentDay);
   }
 
 
@@ -39,4 +44,5 @@ $(function () {
   displayCurrentDate();
   // Updates the time display every second.
   setInterval(displayCurrentDate, 1000);
+  displayCurrentDay();
 });
