@@ -4,6 +4,7 @@ $(function () {
     $("#currentDay").text("Current Date and Time: " + currentDate);
   }
 
+
   $(".saveBtn").on("click", function btnClick() {
     var userInput = $(this).siblings(".description").val();
 
@@ -14,7 +15,7 @@ $(function () {
 
 
   var currentHour = dayjs().hour();
-  $(".time-block").each(function () {
+  $(".time-block").each(function hourCalc() {
     var hour = parseInt($(this).attr("id").split("-")[1])
 
     if (hour < currentHour) {
@@ -26,12 +27,14 @@ $(function () {
     }
   });
 
-  $(".time-block").each(function () {
+
+  $(".time-block").each(function loadUserInput() {
     var timeBlockId = $(this).attr("id");
     var userInput = localStorage.getItem(timeBlockId);
 
     $(this).find(".description").val(userInput);
   });
+
 
   displayCurrentDate();
   // Updates the time display every second.
